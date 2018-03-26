@@ -1,26 +1,9 @@
-/**
- * @class ExampleComponent
- */
+import CircularButton from './components/CircularButton'
+import Button from './components/Button'
 
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import './styles/index.css'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+export {
+	Button,
+  CircularButton
 }

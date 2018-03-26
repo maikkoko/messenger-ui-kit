@@ -1,0 +1,39 @@
+/* Button Styles */
+
+@import './index.css';
+
+.button {
+	display: inline-block;
+  position: relative;
+}
+
+.buttonPressed {
+	composes: button;
+	opacity: 0.80;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.buttonCurtain {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top : 0;
+	background-color: var(--divider);
+	display: block;
+}
+
+.primary {
+	background-color: var(--color-blue);
+}
+
+.secondary {
+	background-color: white;
+}
+
+.disabled {
+	background-color:  var(--button-bg);
+}

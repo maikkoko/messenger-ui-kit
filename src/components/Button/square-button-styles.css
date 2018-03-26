@@ -1,0 +1,24 @@
+
+.squareButton {
+  margin: 4px; /* yo */
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.squareButton svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.squareButton span {
+  color: white;
+}
+
+.squareButton span:not(:first-child) {
+  padding-left: 8px;
+  line-height: 40px;
+  vertical-align: middle;
+}

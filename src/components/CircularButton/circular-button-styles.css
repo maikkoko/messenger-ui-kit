@@ -1,0 +1,25 @@
+.circular {
+	height: 40px;
+	width: 40px;
+	border: none;
+	border-radius: 20px;
+	position: relative;
+}
+
+.circularCurtain {
+	border-radius: 20px;
+}
+
+.circular svg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+}
+
+.circularNext svg {
+	left: 53%;
+}
+
