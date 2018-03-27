@@ -1,7 +1,7 @@
 import React from 'react'
 
 const RightArrowIcon = (props) => {
-  let fill = props.secondary ? "#0084FF" : "#FFFFFF"
+  let fill = props.primary ? "#FFFFFF" : "#0084FF"
   fill = props.disabled ? "rgba(0, 0, 0, 0.34)" : fill
 
   return (

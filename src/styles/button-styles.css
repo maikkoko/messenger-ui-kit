@@ -3,13 +3,19 @@
 @import './index.css';
 
 .button {
+  margin: 4px; /* yo */
 	display: inline-block;
-  position: relative;
+	position: relative;
+	border: 1px solid var(--color-blue);
+	box-sizing: border-box;
 }
 
-.buttonPressed {
-	composes: button;
-	opacity: 0.80;
+.button span {
+	vertical-align: middle;
+}
+
+.button svg {
+	vertical-align: middle;
 }
 
 .button:hover {
@@ -28,12 +34,92 @@
 
 .primary {
 	background-color: var(--color-blue);
+	color: white;
 }
 
 .secondary {
 	background-color: white;
+	color: var(--color-blue);
 }
 
 .disabled {
-	background-color:  var(--button-bg);
+	background-color: var(--button-bg);
+	color: var(--hint-text);
+	border-color: var(--button-bg);
+}
+
+.squareButton {
+	composes: button;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.squareButtonCurtain {
+	composes: buttonCurtain;
+  border-radius: 4px;
+}
+
+.squareButtonFull {
+	width: calc(100% - 8px);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.squareButtonSecondary {
+	composes: secondary;
+}
+
+.squareButton svg {
+	padding-right: 8px;
+}
+
+.largeButton {
+	composes: squareButton;
+	line-height: 48px;
+	padding-left: 24px;
+  padding-right: 24px;
+}
+
+.largeButton svg {
+	width: 24px;
+  height: 24px;
+}
+
+.largeButton span {
+	font-size: 16pt;
+}
+
+.mediumButton {
+	composes: squareButton;
+	line-height: 40px;
+	padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mediumButton svg {
+	width: 20px;
+  height: 20px;
+}
+
+.mediumButton span {
+	font-size: 14pt;
+}
+
+.smallButton {
+	composes: squareButton;
+	line-height: 32px;
+	padding-left: 16px;
+  padding-right: 16px;
+}
+
+.smallButton svg {
+	width: 16px;
+	height: 16px;
+}
+
+.smallButton span {
+	font-size: 12pt;
 }

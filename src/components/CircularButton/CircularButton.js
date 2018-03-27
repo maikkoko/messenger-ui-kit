@@ -1,6 +1,9 @@
 /**
  * @class CircularButton
- * 
+ * @prop icon, string - choices: 'arrow', 'upload'. defaults to 'arrow'
+ * @prop disabled, bool
+ * @prop action, function (required) - action taken on button click
+ * @prop primary, bool - checks if button has primary styles. defaults to false
  */
 
 import React, { Component } from 'react'
@@ -18,7 +21,7 @@ class CircularButton extends Component {
 	}
 
 	static propTypes = {
-		secondary: PropTypes.bool,
+		primary: PropTypes.bool,
 		icon: PropTypes.string,
 		disabled: PropTypes.bool,
 		action: PropTypes.func.isRequired
@@ -26,32 +29,27 @@ class CircularButton extends Component {
 
 	getIcon = () => {
 		switch (this.props.icon) {
-			case 'arrow':
-				return (
-					<RightArrowIcon
-						{...this.props} />
-				)
-
 			case 'upload':
 				return  (
 					<UploadIcon
 						{...this.props} />
 				)
-			
+
+			case 'arrow':
 			default:
 				return (
-					<RightArrowIcon 
+					<RightArrowIcon
 						{...this.props} />
 				)
 		}
 	}
 
   render() {
-		const { icon, secondary, disabled } = this.props
+		const { icon, primary, disabled } = this.props
 
 		let className = `${buttonStyles.button} ${circularStyles.circular}`
 		className = icon === 'upload' ? className : `${className} ${circularStyles.circularNext}`
-		className = secondary ? `${className} ${buttonStyles.secondary}` : `${className} ${buttonStyles.primary}`
+		className = primary ? `${className} ${buttonStyles.primary}` : `${className} ${buttonStyles.secondary}`
 		className = disabled ? `${className} ${buttonStyles.disabled}` : className
 
 		return (
