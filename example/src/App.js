@@ -297,3 +297,21 @@ export default class App extends Component {
     )
   }
 }
+
+/* 
+List Item
+16pt
+
+List header
+small - 11/12pt uppercase
+large - 14pt semibold
+
+Paragraph
+14pt
+
+Headers
+16/17pt Semibold
+
+Header/Dark Text
+16pt Medium
+*/
