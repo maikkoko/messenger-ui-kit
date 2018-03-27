@@ -1,0 +1,21 @@
+.container {
+  background-color: white;
+  border-top: 1px solid var(--bubble);
+  padding: 16px;
+}
+
+.container h1 {
+  font-size: var(--font-large);
+  font-weight: 600;
+}
+
+.container p {
+  font-size: var(--font-medium);
+  line-height: var(--line-height-medium);
+  font-weight: normal;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}

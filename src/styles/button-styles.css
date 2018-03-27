@@ -29,7 +29,8 @@
 	left: 0;
 	top : 0;
 	background-color: var(--divider);
-	display: block;
+	display: block !important;
+	z-index: 1;
 }
 
 .primary {
@@ -57,7 +58,7 @@
 
 .squareButtonCurtain {
 	composes: buttonCurtain;
-  border-radius: 4px;
+	border-radius: 4px;
 }
 
 .squareButtonFull {
@@ -89,14 +90,14 @@
 }
 
 .largeButton span {
-	font-size: 16pt;
+	font-size: var(--font-large);
 }
 
 .mediumButton {
 	composes: squareButton;
 	line-height: 40px;
-	padding-left: 20px;
-  padding-right: 20px;
+	padding-left: 16px;
+  padding-right: 16px;
 }
 
 .mediumButton svg {
@@ -105,7 +106,7 @@
 }
 
 .mediumButton span {
-	font-size: 14pt;
+	font-size: var(--font-medium);
 }
 
 .smallButton {
@@ -121,5 +122,5 @@
 }
 
 .smallButton span {
-	font-size: 12pt;
+	font-size: var(--font-small);
 }

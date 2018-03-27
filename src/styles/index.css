@@ -13,13 +13,21 @@
   --button-bg: rgba(0, 0, 0, 0.06);
   --bubble: rgba(0, 0, 0, 0.06);
   --wash: rgba(0, 0, 0, 0.03);
+
+  /* Font Sizes */
+  --font-large: 14pt;
+  --line-height-large: 18pt;
+  --font-medium: 12pt;
+  --line-height-medium: 16pt;
+  --font-small: 10pt;
+  --line-height-small: 12pt;
 }
 
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   color: var(--primary-text);
-  font-size: 14pt;
-  line-height: 18pt;
+  font-size: var(--font-medium);
+  line-height: var(--line-height-medium);
   padding: 0;
   margin: 0;
   background-color: var(--wash);
