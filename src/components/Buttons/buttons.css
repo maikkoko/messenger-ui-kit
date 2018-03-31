@@ -28,7 +28,7 @@
 	width: 100%;
 	left: 0;
 	top : 0;
-	background-color: var(--divider);
+	background-color: rgba(0, 0, 0, 0.20);
 	display: block !important;
 	z-index: 1;
 }
