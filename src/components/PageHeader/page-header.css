@@ -1,0 +1,20 @@
+.pageHeader {
+  --header-height: 42px;
+  height: var(--header-height);
+  display: flex;
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+.pageHeader > span {
+  font-size: 12pt;
+  line-height: var(--header-height);
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+.pageHeader > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

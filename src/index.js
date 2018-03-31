@@ -10,6 +10,7 @@ import {
   ListItem,
   ListHeader
 } from './components/Lists'
+import PageHeader from './components/PageHeader'
 
 
 export {
@@ -19,7 +20,8 @@ export {
   Button,
   List,
   ListItem,
-  ListHeader
+  ListHeader,
+  PageHeader
 }
 
 export default UIKit
