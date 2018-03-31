@@ -1,3 +1,4 @@
+import UIKit from './UIKit'
 import Container from './components/Container'
 import {
   CircularButton,
@@ -5,7 +6,6 @@ import {
 	Button
 } from './components/Buttons'
 
-import './styles/index.css'
 
 export {
   Container,
@@ -13,4 +13,6 @@ export {
   BottomButton,
 	Button
 }
+
+export default UIKit
  
