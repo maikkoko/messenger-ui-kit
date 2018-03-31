@@ -21,6 +21,9 @@
   --line-height-medium: 16pt;
   --font-small: 10pt;
   --line-height-small: 12pt;
+
+  /* Padding */
+  --body-padding: 16px;   
 }
 
 html, body {
