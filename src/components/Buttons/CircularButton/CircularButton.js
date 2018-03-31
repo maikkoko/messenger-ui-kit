@@ -8,11 +8,11 @@
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import RightArrowIcon from '../../assets/RightArrowIcon'
-import UploadIcon from '../../assets/UploadIcon'
+import RightArrowIcon from '../../../assets/RightArrowIcon'
+import UploadIcon from '../../../assets/UploadIcon'
 
-import buttonStyles from '../../styles/button-styles.css'
-import circularStyles from'./circular-button-styles.css'
+import buttonStyles from '../buttons.css'
+import circularStyles from'./circular-button.css'
 
 class CircularButton extends Component {
 

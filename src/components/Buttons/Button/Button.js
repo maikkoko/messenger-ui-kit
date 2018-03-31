@@ -11,10 +11,10 @@
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import RightArrowIcon from '../../assets/RightArrowIcon'
-import UploadIcon from '../../assets/UploadIcon'
+import RightArrowIcon from '../../../assets/RightArrowIcon'
+import UploadIcon from '../../../assets/UploadIcon'
 
-import styles from '../../styles/button-styles.css'
+import styles from '../buttons.css'
 
 class Button extends Component {
 

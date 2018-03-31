@@ -1,7 +1,9 @@
 import Container from './components/Container'
-import CircularButton from './components/CircularButton'
-import BottomButton from './components/BottomButton'
-import Button from './components/Button'
+import {
+  CircularButton,
+  BottomButton,
+	Button
+} from './components/Buttons'
 
 import './styles/index.css'
 
