@@ -11,11 +11,12 @@ class ListItem extends Component {
   static propTypes = {
     text: PropTypes.string,
     secondaryText: PropTypes.string,
-    rightText: PropTypes.string
+    rightText: PropTypes.string,
+    style: PropTypes.object
   }
 
   render() {
-    const { text, rightText, secondaryText } = this.props
+    const { style, text, rightText, secondaryText } = this.props
 
     const secondary = secondaryText ? (
       <p className={styles.secondary}>{secondaryText}</p>
@@ -27,6 +28,7 @@ class ListItem extends Component {
 
     return (
       <li
+        style={style}
         className={className}
         onTouchStart={this.togglePressedState}
         onTouchEnd={this.togglePressedState}
@@ -37,7 +39,7 @@ class ListItem extends Component {
           <p>{this.props.text}</p>
           {secondary}
         </div>
-        <div className={styles.rightText}>2000</div>
+        <div className={styles.rightText}>{rightText}</div>
       </li>
     )
   }

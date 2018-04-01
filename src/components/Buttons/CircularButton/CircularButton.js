@@ -24,7 +24,8 @@ class CircularButton extends Component {
 		primary: PropTypes.bool,
 		icon: PropTypes.string,
 		disabled: PropTypes.bool,
-		action: PropTypes.func.isRequired
+		action: PropTypes.func.isRequired,
+		style: PropTypes.object
 	}
 
 	getIcon = () => {
@@ -53,7 +54,9 @@ class CircularButton extends Component {
 		className = disabled ? `${className} ${buttonStyles.disabled}` : className
 
 		return (
-			<div className={className}
+			<div
+				style={style}
+				className={className}
 				onClick={this.onClick}
 				onTouchStart={this.togglePressedState}
 				onTouchEnd={this.togglePressedState}

@@ -18,7 +18,7 @@ class BottomButton extends Component {
     let props = {...this.props, fluid: true, size: "large" }
 
     return (
-      <div className={styles.bottomButton} >
+      <div style={props.style} className={styles.bottomButton} >
         <Button {...props} />
       </div>
     )

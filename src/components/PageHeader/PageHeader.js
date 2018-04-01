@@ -6,14 +6,15 @@ import styles from './page-header.css';
 class PageHeader extends Component {
   static propTypes = {
     text: PropTypes.string,
-    action: PropTypes.func
+    action: PropTypes.func,
+    style: PropTypes.object
   };
 
   render() {
-    const { text } = this.props;
+    const { text, style } = this.props;
 
     return (
-      <a className={styles.pageHeader} href="#" onClick={this.executeAction}>
+      <a style={style} className={styles.pageHeader} onClick={this.executeAction}>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +26,7 @@ class PageHeader extends Component {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            class="feather feather-chevron-left"
+            className="feather feather-chevron-left"
           >
             <polyline points="15 18 9 12 15 6" />
           </svg>
@@ -36,7 +37,7 @@ class PageHeader extends Component {
   }
 
   executeAction = () => {
-    this.props.action();
+    if (this.props.action) this.props.action();
   };
 }
 

@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import styles from './container.css'
 
 const Container = ({ children }) => (
@@ -6,5 +8,10 @@ const Container = ({ children }) => (
     { children }
   </div>
 )
+
+Container.propTypes = {
+  children: PropTypes.node,
+  style: PropTypes.object
+}
 
 export default Container

@@ -28,7 +28,8 @@ class Button extends Component {
     size: PropTypes.string,
     disabled: PropTypes.bool,
     fluid: PropTypes.bool,
-    action: PropTypes.func.isRequired
+    action: PropTypes.func.isRequired,
+    style: PropTypes.object
   }
 
   getIcon = () => {
@@ -63,7 +64,7 @@ class Button extends Component {
   }
 
   render() {
-    const { icon, primary, size, disabled, text, fluid } = this.props
+    const { icon, primary, size, disabled, text, fluid, style } = this.props
     
     let className = this.getClassNameBySize()
     className = primary ? `${className} ${styles.primary}` : `${className} ${styles.squareButtonSecondary}`
@@ -72,6 +73,7 @@ class Button extends Component {
 
     return (
       <div
+        style={style}
         className={className}
         onClick={this.onClick}
         onTouchStart={this.togglePressedState}
